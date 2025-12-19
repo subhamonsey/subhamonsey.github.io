@@ -53,17 +53,16 @@ header nav ul li a {
 
 /* Extra-tight spacing near the top */
 #home {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
 }
 
 #research {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
 }
-
+/* 
 #news {
     margin-top: 0.8rem;
-}
+} */
 
 /* Section titles */
 .section-title {
