@@ -49,9 +49,17 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header nav ul li a:hover {
-    color: var(--aqua);
+header nav ul li a {
+    color: var(--fg-dim);
+    font-weight: bold;
 }
+
+header nav ul li:nth-child(1) a:hover { color: var(--yellow); }
+header nav ul li:nth-child(2) a:hover { color: var(--blue); }
+header nav ul li:nth-child(3) a:hover { color: var(--green); }
+header nav ul li:nth-child(4) a:hover { color: var(--orange); }
+header nav ul li:nth-child(5) a:hover { color: var(--purple); }
+header nav ul li:nth-child(6) a:hover { color: var(--aqua); }
 
 /* Container */
 .container {
