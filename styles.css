@@ -80,7 +80,7 @@ header nav ul li a:hover {
     border-left: 3px solid var(--bg-soft);
 }
 
-/* Add color accents per section */
+/* 
 #research {
     border-left-color: var(--blue);
 }
@@ -95,7 +95,7 @@ header nav ul li a:hover {
 
 #contact {
     border-left-color: var(--purple);
-}
+} */ 
 
 /* Section titles */
 .section-title {
