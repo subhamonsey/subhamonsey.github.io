@@ -76,7 +76,25 @@ header nav ul li a:hover {
 /* Sections */
 .section {
     margin: 0.75rem auto;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--bg-soft);
+}
+
+/* Add color accents per section */
+#research {
+    border-left-color: var(--blue);
+}
+
+#news {
+    border-left-color: var(--orange);
+}
+
+#publications {
+    border-left-color: var(--green);
+}
+
+#contact {
+    border-left-color: var(--purple);
 }
 
 /* Section titles */
