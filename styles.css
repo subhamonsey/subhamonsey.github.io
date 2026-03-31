@@ -102,14 +102,27 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Links */
+/* Default links */
 a {
-    color: var(--blue);
+    color: var(--aqua);
 }
 
+/* External links (papers, scholar, etc.) */
+a[href*="arxiv"],
+a[href*="google"],
+a[href*="github"],
+a[href*="orcid"] {
+    color: var(--green);
+}
+
+/* Important links (CV etc.) */
+a[href$=".pdf"] {
+    color: var(--yellow);
+}
+
+/* Hover = pop */
 a:hover {
-    color: var(--aqua);
-    text-decoration: underline;
+    color: var(--orange);
 }
 
 /* Footer */
@@ -139,4 +152,34 @@ input, textarea {
     #home div {
         flex-direction: column;
     }
+}
+/* Dates in news */
+.news-box strong {
+    color: var(--orange);
+}
+
+/* Paper titles */
+#pub-list h3 {
+    color: var(--yellow);
+}
+
+/* Author lines */
+#pub-list p em {
+    color: var(--green);
+    font-style: normal;
+}
+
+/* Conference / achievements */
+strong i {
+    color: var(--purple);
+}
+
+/* General emphasis */
+strong {
+    color: var(--red);
+}
+
+/* Subtle metadata */
+.subtitle {
+    color: var(--gray);
 }
