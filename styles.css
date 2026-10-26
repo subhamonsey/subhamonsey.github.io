@@ -54,12 +54,29 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header nav ul li:nth-child(1) a:hover { color: var(--yellow); }
-header nav ul li:nth-child(2) a:hover { color: var(--blue); }
-header nav ul li:nth-child(3) a:hover { color: var(--green); }
-header nav ul li:nth-child(4) a:hover { color: var(--orange); }
-header nav ul li:nth-child(5) a:hover { color: var(--purple); }
-header nav ul li:nth-child(6) a:hover { color: var(--aqua); }
+header nav ul li:nth-child(1) a:hover {
+    color: var(--yellow);
+}
+
+header nav ul li:nth-child(2) a:hover {
+    color: var(--blue);
+}
+
+header nav ul li:nth-child(3) a:hover {
+    color: var(--green);
+}
+
+header nav ul li:nth-child(4) a:hover {
+    color: var(--orange);
+}
+
+header nav ul li:nth-child(5) a:hover {
+    color: var(--purple);
+}
+
+header nav ul li:nth-child(6) a:hover {
+    color: var(--aqua);
+}
 
 /* Container */
 .container {
@@ -103,7 +120,7 @@ header nav ul li:nth-child(6) a:hover { color: var(--aqua); }
 
 #contact {
     border-left-color: var(--purple);
-} */ 
+} */
 
 /* Section titles */
 .section-title {
@@ -136,7 +153,7 @@ a {
 /* External links (papers, scholar, etc.) */
 a[href*="arxiv"],
 a[href*="google"],
-a[href*="github"],
+a[href*="github.com"],
 a[href*="orcid"] {
     color: var(--green);
 }
@@ -161,7 +178,8 @@ footer {
 }
 
 /* Inputs (future proofing) */
-input, textarea {
+input,
+textarea {
     background-color: var(--bg-hard);
     color: var(--fg);
     border: 1px solid var(--gray);
@@ -179,6 +197,7 @@ input, textarea {
         flex-direction: column;
     }
 }
+
 /* Dates in news */
 .news-box strong {
     color: var(--orange);
@@ -257,7 +276,9 @@ strong {
 }
 
 @keyframes terminal-blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {
