@@ -91,6 +91,11 @@ header nav ul li:nth-child(6) a:hover {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--yellow);
+    margin-bottom: 0.15em;
+}
+
+.home-heading {
+    text-align: left;
 }
 
 .subtitle {
