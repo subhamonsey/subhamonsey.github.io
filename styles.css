@@ -33,7 +33,9 @@ body {
 header nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 0.5rem 1rem;
     padding: 1rem;
     margin: 0;
     background: var(--bg-soft);
@@ -41,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 1rem;
+    margin: 0;
 }
 
 header nav ul li a {
@@ -93,6 +95,28 @@ header nav ul li:nth-child(6) a:hover {
     font-weight: 700;
     color: var(--yellow);
     margin-bottom: 0.15em;
+}
+
+.home-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.profile-photo-frame {
+    width: 176px;
+    height: 176px;
+    flex: 0 0 176px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.25);
 }
 
 .home-heading {
@@ -204,6 +228,27 @@ textarea {
     }
 }
 
+@media (max-width: 600px) {
+    header nav ul {
+        gap: 0.5rem 0.9rem;
+        padding: 0.75rem 0.5rem;
+    }
+
+    .home-intro {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .profile-photo {
+        width: 112px;
+        flex-basis: 112px;
+    }
+
+    .main-name {
+        font-size: 1.75rem;
+    }
+}
+
 /* Dates in news */
 .news-box strong {
     color: var(--orange);
@@ -288,10 +333,22 @@ strong {
 }
 
 @media (max-width: 768px) {
+    .profile-photo-frame {
+        width: 132px;
+        height: 132px;
+        flex-basis: 132px;
+    }
+
     .terminal-subtitle {
         max-width: 100%;
         gap: 0.35rem;
         font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-name {
+        font-size: 1.25rem;
     }
 }
 
