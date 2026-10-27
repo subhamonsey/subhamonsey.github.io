@@ -9,6 +9,7 @@
     --red: #fb4934;
     --green: #b8bb26;
     --yellow: #fabd2f;
+    --yellow-muted: #d9b84a;
     --blue: #83a598;
     --purple: #d3869b;
     --aqua: #8ec07c;
@@ -260,7 +261,7 @@ strong {
 }
 
 .prompt-path {
-    color: var(--yellow);
+    color: var(--yellow-muted);
     font-weight: 700;
     overflow-wrap: anywhere;
 }
