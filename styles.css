@@ -223,32 +223,52 @@ textarea {
 
 @media (max-width: 600px) {
     .container {
-        padding: 1.25rem 0.75rem;
+        padding: 0.65rem 0.75rem 1.25rem;
     }
 
     header nav ul {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        justify-items: stretch;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         gap: 0.35rem;
-        padding: 0.55rem 0.5rem;
+        padding: 0.45rem 0.4rem 0.55rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        scrollbar-color: var(--gray) transparent;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    header nav ul li {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
     }
 
     header nav ul a {
         display: block;
-        padding: 0.35rem 0.4rem;
+        padding: 0.35rem 0.6rem;
         border: 1px solid transparent;
         border-radius: 999px;
         background: var(--bg);
-        font-size: 0.82rem;
-        line-height: 1.25;
-        text-align: center;
-        white-space: normal;
+        font-size: 0.78rem;
+        line-height: 1.2;
+        white-space: nowrap;
     }
 
-    header nav ul a:hover {
+    header nav ul a:hover,
+    header nav ul a:focus-visible {
         background: var(--bg-hard);
         border-color: var(--gray);
+    }
+
+    header nav ul::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    header nav ul::-webkit-scrollbar-thumb {
+        background: var(--gray);
+        border-radius: 999px;
     }
 
     .section {
